@@ -8,7 +8,7 @@ class AbstractHandler(abc.ABC):
 
     @abc.abstractmethod
     async def __call__(self, event: Event):
-        raise NotImplemented()
+        raise NotImplemented
 
 
 class SyncUserDateHandler(AbstractHandler, RequireInternalService):
