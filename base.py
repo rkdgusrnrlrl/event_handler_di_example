@@ -20,5 +20,5 @@ T = TypeVar("T")
 class Require(abc.ABC, Generic[T]):
 
     @abc.abstractmethod
-    def set_dependency_inject(self, dependencies: T):
+    def __init__(self, dependencies: T):
         raise NotImplemented()
